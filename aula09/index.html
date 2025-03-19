@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.425);
+            color: white;
+            text-shadow: 2px 5px 6px rgba(0, 0, 0, 0.637);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <div>Clique em mim</div>
+    <script>
+        var t1 = document.getElementById("titulo")
+        document.write(t1.innerHTML)
+        //t1.style.color = 'blue'
+        var b = document.querySelector('div')
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    background-color: rgba(36, 139, 105, 0.534);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.315);
+}
+
+section {
+    padding: 2px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+
+section#idade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    border: 1px solid gray;
+    margin: auto;
+    width: 10px;
+}
+
+#botao{
+    margin: auto;
+}
+
+section p {
+    
+}

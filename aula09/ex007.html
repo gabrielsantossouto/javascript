@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Valores</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+
+        input{
+            font: normal 20pt Arial;
+            width: 100px;
+        }
+        
+        input#butao {
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 5px black;
+        }
+
+        div#res{
+            margin: 12px;
+        }
+
+        *{
+            margin: 0px 0px 0px 2px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txt1" id="txt1">
+    e
+    <input type="number" name="txt2" id="txt2">
+    <input type="button" id="butao" value="Somar" onclick="somar()">
+    <input type="button" value="divisao" onclick="dividir()">
+    <div id="res"></div>
+    <script>
+        function dividir() {
+            var tn1 = document.getElementById('txt1')
+            var tn2 = document.getElementById('txt2')
+            var res = window.document.getElementById('res')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 / n2
+            res.innerHTML = 'O resultado da divisão é ' + s
+        }
+        
+        function somar(){
+
+        var tn1 = document.getElementById('txt1')
+        var tn2 = document.getElementById('txt2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = 'O resultado desses numeros somados é  ' + s
+        
+        }
+    </script>
+</body>
+</html>

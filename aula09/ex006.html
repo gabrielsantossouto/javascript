@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        div {
+            color: white;
+            background-color: black;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="area" 
+    onmouseenter="entrar()" onmouseout="saiu()"
+    onmousemove="mover()"
+    onmousedown="press()"
+    onmouseup="unpress()">
+        interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+
+        a.addEventListener('click', clicar)
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+        }
+        
+        function entrar() {
+            var a = window.document.getElementById('area')
+            a.innerText = ('Entrou')
+        }
+
+        function saiu() {
+            let a = document.getElementById('area')
+            a.innerText = 'Volte para dentro'
+
+        }
+        
+        function mover() {
+            var b = document.getElementById('area')
+            b.innerText = 'Pare de se mover'
+        }
+        function press() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'Para de me segurar'
+            a.style.backgroundColor = 'red'
+        }
+
+        function unpress() {
+            var a = window.document.getElementById('area')
+            a.innerText = 'UFFA!...'
+            a.style.backgroundColor = 'black'
+        }
+
+    </script>
+</body>
+</html>
